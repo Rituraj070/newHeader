@@ -25,6 +25,17 @@ body {
 }
 .center-logo {
     width: 28%; 
+    animation: liftUp 1s ease-in-out;
+}
+@keyframes liftUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .kangaroo-image {
