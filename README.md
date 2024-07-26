@@ -1,7 +1,7 @@
 # Ausmun_Project
 
 ## Introduction
-Welcome to the Ausmun_Project repository. This project aims to [brief description of the project].
+Welcome to the Ausmun_Project repository. This project aims to strengthen India-Australia bilateral relations by engaging youth in dialogue and collaboration on various global issues.
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
