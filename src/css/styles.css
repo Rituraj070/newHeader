@@ -37,7 +37,15 @@ body {
         opacity: 1;
     }
 }
+@media (max-width: 600px) {
+    .center-image {
+        padding-top: 48%; /* Adjust padding for smaller screens */
+    }
 
+    .center-logo {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
 .kangaroo-image {
     position: absolute;
     top: 0;
@@ -63,5 +71,36 @@ body {
     width: 20%; 
     height: auto;
     z-index: -1;
+}
+
+.elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+@media (max-width: 600px) {
+    .countdown {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .countdown img {
+        width: 25%;
+        height: auto;
+    }
+
+    .countdown-timer {
+        font-size: 14px;
+    }
+
+    .elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
 }
     /* Homepage End */
