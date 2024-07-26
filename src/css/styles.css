@@ -37,15 +37,7 @@ body {
         opacity: 1;
     }
 }
-@media (max-width: 600px) {
-    .center-image {
-        padding-top: 48%; /* Adjust padding for smaller screens */
-    }
 
-    .center-logo {
-        width: 80%; /* Adjust width for smaller screens */
-    }
-}
 .kangaroo-image {
     position: absolute;
     top: 0;
@@ -79,15 +71,31 @@ body {
     right: 20px;
     z-index: 1000;
 }
+    /* Homepage End */
 
+    /* MOBILE VIEW  */
 @media (max-width: 600px) {
+
+    .hero-section {
+        height: 93vh; 
+    }
+
+    .center-image {
+        padding-top: 48%; 
+    }
+
+    .center-logo {
+        width: 75%; 
+    }
     .countdown {
-        width: 80%;
+        padding-top: 8%;
+        width: 87%;
         flex-direction: column;
         margin: 0 auto;
     }
 
     .countdown img {
+        padding-top: 11%;
         width: 25%;
         height: auto;
     }
@@ -103,4 +111,3 @@ body {
         height: 40px;
     }
 }
-    /* Homepage End */
