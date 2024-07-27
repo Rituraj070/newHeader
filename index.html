@@ -35,19 +35,31 @@
             </div>
                 
                 <!-- WHATSAPP-->
-            <div class="elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e" data-elfsight-app-lazy></div>
-        
-    </div>
-    <div class="carousel">
+                <div class="elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e" data-elfsight-app-lazy></div>
+                
+            </div>
+            <!-- Homepage End-->
+            
+            <!-- CAROUSEL-IMAGE BEGIN -->
+            <div class="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="src/images/artboard-web-view.jpg" alt="Image 1">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/artboard-mobile-view.jpg">
+                    <img src="src/images/artboard-web-view.jpg" alt="Image 1">
+                </picture>
             </div>
             <div class="carousel-item">
-                <img src="src/images/committee-web-view.jpg" alt="Image 2">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/committee-mobile-view.jpg">
+                    <img src="src/images/committee-web-view.jpg" alt="Image 2">
+                </picture>
             </div>
             <div class="carousel-item">
-                <img src="src/images/promoters-web-view.jpg" alt="Image 3">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/promoters-mobile-view.jpg">
+                    <img src="src/images/promoters-web-view.jpg" alt="Image 3">
+                </picture>
             </div>
         </div>
         <button class="carousel-control prev" onclick="move(-1)">&#10094;</button>
@@ -58,7 +70,8 @@
             <span class="indicator" onclick="jumpTo(2)"></span>
         </div>
     </div>
-        <!-- Homepage End-->
+        <!-- CAROUSEL-IMAGE END -->
+
         <script src="src/js/script.js"></script>
 </body>
 </html>

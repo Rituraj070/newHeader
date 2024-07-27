@@ -72,46 +72,9 @@ body {
     z-index: 1000;
 }
     /* Homepage End */
-
-    /* MOBILE VIEW  */
-@media (max-width: 600px) {
-
-    .hero-section {
-        height: 93vh; 
-    }
-
-    .center-image {
-        padding-top: 48%; 
-    }
-
-    .center-logo {
-        width: 75%; 
-    }
-    .countdown {
-        padding-top: 8%;
-        width: 87%;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .countdown img {
-        padding-top: 11%;
-        width: 25%;
-        height: auto;
-    }
-
-    .countdown-timer {
-        font-size: 14px;
-    }
-
-    .elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e {
-        bottom: 10px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-    }
-}
-.carousel {
+    
+    /* Countdown Begin */
+    .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -139,21 +102,23 @@ body {
 .carousel-control {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: transparent;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 1.5;
+    font-size: 2rem;
+    color: #333;
+    padding: 0 5px;
 }
 
 .carousel-control.prev {
-    left: 10px;
+    left: 3%;
+    transform: translateY(-50%) rotate(359deg);
 }
 
 .carousel-control.next {
-    right: 10px;
+    right: 3%;
+    transform: translateY(-50%) rotate(359deg);
 }
 
 .carousel-indicators {
@@ -162,7 +127,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 5px;
+    gap: 3px;
 }
 
 .indicator {
@@ -178,3 +143,50 @@ body {
 .indicator:hover {
     background-color: #0d0c0c;
 }
+        /* Countdown End */
+        
+        
+    /* MOBILE VIEW Begin */
+    @media (max-width: 600px) {
+
+    .hero-section {
+        height: 85vh; 
+    }
+
+    .center-image {
+        padding-top: 60%; 
+    }
+
+    .center-logo {
+        width: 79%; 
+    }
+    .countdown {
+        padding-top: 8%;
+        width: 87%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .countdown img {
+        padding-top: 11%;
+        width: 25%;
+        height: auto;
+    }
+
+    .countdown-timer {
+        font-size: 14px;
+    }
+
+    .elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        
+    }
+    .carousel img {
+        height: 276px; 
+        object-fit: cover; 
+    }
+}
+    /* MOBILE VIEW End */
