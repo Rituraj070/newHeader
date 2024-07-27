@@ -14,8 +14,8 @@
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
     <!-- Insert Whatsapp link-->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
         <!-- Homepage Begin-->
     <div class="hero-section">
@@ -36,6 +36,7 @@
                           <li><a href="#">Contact Us</a></li>
                         </ul>
                       </nav
+                    
                 </div>
     
                 <!-- Center Image-->
@@ -51,9 +52,43 @@
             </div>
                 
                 <!-- WHATSAPP-->
-            <div class="elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e" data-elfsight-app-lazy></div>
-        
+                <div class="elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e" data-elfsight-app-lazy></div>
+                
+            </div>
+            <!-- Homepage End-->
+            
+            <!-- CAROUSEL-IMAGE BEGIN -->
+            <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/artboard-mobile-view.jpg">
+                    <img src="src/images/artboard-web-view.jpg" alt="Image 1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/committee-mobile-view.jpg">
+                    <img src="src/images/committee-web-view.jpg" alt="Image 2">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="src/images/promoters-mobile-view.jpg">
+                    <img src="src/images/promoters-web-view.jpg" alt="Image 3">
+                </picture>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="move(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="move(1)">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="jumpTo(0)"></span>
+            <span class="indicator" onclick="jumpTo(1)"></span>
+            <span class="indicator" onclick="jumpTo(2)"></span>
+        </div>
     </div>
-        <!-- Homepage End-->
+        <!-- CAROUSEL-IMAGE END -->
+
+        <script src="src/js/script.js"></script>
 </body>
 </html>
