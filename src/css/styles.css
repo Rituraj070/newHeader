@@ -7,7 +7,7 @@ body {
 
     /* Homepage Begin */
 .hero-section {
-    background: url('../images/Fort.png') no-repeat center;
+    background: url('../images/Homepage/Fort.png') no-repeat center;
     background-attachment: scroll;
     background-size: cover;
     width: 100%;
