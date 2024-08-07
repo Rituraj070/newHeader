@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Copperplate Gothic', Arial, sans-serif;
     position: relative;
 }
 
     /* Homepage Begin */
 .hero-section {
-    background: url('../images/Homepage/Fort.png') no-repeat center;
+    background: url('../images/Homepage/Fort.jpg') no-repeat center;
     background-attachment: scroll;
     background-size: cover;
     width: 100%;
@@ -24,7 +24,7 @@ body {
     padding-top: 15%;
 }
 .center-logo {
-    width: 28%; 
+    width: 28%;
     animation: liftUp 1s ease-in-out;
 }
 @keyframes liftUp {
