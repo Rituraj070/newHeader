@@ -13,6 +13,7 @@
     <!-- Insert Countdown Link -->
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
     <!-- Insert Whatsapp link-->
+    <script src="https://kit.fontawesome.com/dbd1480747.js" crossorigin="anonymous"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -96,19 +97,19 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/artboard-mobile-view.jpg">
+                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/Crousel-Image-M-1.png">
                     <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 1">
                 </picture>
             </div>
             <div class="carousel-item">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/committee-mobile-view.jpg">
+                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/Crousel-Image-M-1.png">
                     <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 2">
                 </picture>
             </div>
             <div class="carousel-item">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/promoters-mobile-view.jpg">
+                    <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/Crousel-Image-M-1.png">
                     <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 3">
                 </picture>
             </div>
@@ -122,32 +123,7 @@
         </div>
     </div>
         <!-- CAROUSEL-IMAGE END -->
-<script>
-    let header = document.getElementById("header")
-    let nav = document.getElementById("nav");
-    let ham = document.getElementById("hamburger");
-    let cross = document.getElementById("cross");
-
-    ham.addEventListener("click",()=>{
-        ham.style.display = "none"
-        cross.style.display = "block"
-        header.style.backgroundColor = "black"
-        if(nav.classList != "show"){
-            nav.classList.add("show")
-        }
-
-    })
-
-    cross.addEventListener("click",()=>{
-        ham.style.display = "block"
-        cross.style.display = "none"
-        header.style.backgroundColor = "rgb(255, 255, 255)"
-        if(nav.classList == "show"){
-            nav.classList.remove("show")
-        }
-    })
-
-</script>
+        
         <script src="src/js/script.js"></script>
 </body>
 </html>
