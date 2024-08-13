@@ -16,9 +16,60 @@
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
+<body>
         <!-- Homepage Begin-->
     <div class="hero-section">
+
+        <!-- Header Begin -->
+        <header id="header">
+            <div class="logo">
+                <img src="src/images/Homepage/Logo.png" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a id="active" href="#">Home</a></li>
+                    <li>
+                        <a href="#">Committees
+                            <i class='fas fa-angle-down'></i>
+                        </a>
+                        <ul  id="committee">
+                            <li><a href="#">AUS-INDIA Joint Cabinet Meeting</a></li>
+                            <li><a href="#">United Nations General Assembly First Committee Disarmament & International Security Council</a></li>
+                            <li><a href="#">United Nations Framework Convention on Climate Change</a></li>
+                            <li><a href="#">United Nations Framework Convention on Climate Change</a></li>
+                            <li><a href="#">United Nations Security Council</a></li>
+                            <li><a href="#">International Cricket Council</a></li>
+                            <li><a href="#">International Press</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Background Guides</a></li>
+                    <li>
+                        <a href="#">Partners
+                            <i class='fas fa-angle-down'></i>
+                        </a>
+                        <ul id="partner">
+                            <li><a href="#">Partner Universities</a></li>
+                            <li><a href="#">Participating Institution</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Registration Details</a></li>
+                    <li>
+                        <a href="#">About Us
+                            <i class='fas fa-angle-down'></i>
+                        </a>
+                        <ul id="about">
+                            <li><a href="#">Introduction To AUSMUN INDIA</a></li>
+                            <li><a href="#">Theme of AUSMUN India 24</a></li>
+                            <li><a href="#">Meet the Secretariat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">&#9776;</div>
+            <div id="cross">&times;</div>
+        </header>
+        <!-- Header End-->
 
                 <!-- NAVBARL Begin -->
 
@@ -26,39 +77,39 @@
             <div class="center-image">
                 <img src="src/images/Homepage/Logo.png" class="center-logo">
             </div>
-            
+
                 <!-- COUNTDOWN-->
             <div class="countdown">
 <!--                <img src="src/images/Homepage/Kangaroo.png" class="kangaroo-image">-->
-                <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-timezone="Asia/Kolkata" data-textcolor="#fe471e" data-date="2024-08-14 13:00" data-background="#febfca" data-digitscolor="#ffffff" data-unitscolor="#ffffff">Welcome to The Indian Summit</a>
+                <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2024-08-14 13:00" data-background="#ff7954" data-digitscolor="#ffffff" data-unitscolor="#ffffff">Welcome to The Indian Summit</a>
 <!--                <img src="src/images/Homepage/Elephant.png" class="elephant-image">-->
             </div>
-                
+
                 <!-- WHATSAPP-->
                 <div class="elfsight-app-b399437b-d091-4fd2-97e4-555699fa089e" data-elfsight-app-lazy></div>
-                
+
             </div>
             <!-- Homepage End-->
-            
+
             <!-- CAROUSEL-IMAGE BEGIN -->
             <div class="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <picture>
                     <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/artboard-mobile-view.jpg">
-                    <img src="src/images/CAROUSEL-IMAGE/artboard-web-view.jpg" alt="Image 1">
+                    <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 1">
                 </picture>
             </div>
             <div class="carousel-item">
                 <picture>
                     <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/committee-mobile-view.jpg">
-                    <img src="src/images/CAROUSEL-IMAGE/committee-web-view.jpg" alt="Image 2">
+                    <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 2">
                 </picture>
             </div>
             <div class="carousel-item">
                 <picture>
                     <source media="(max-width: 600px)" srcset="src/images/CAROUSEL-IMAGE/promoters-mobile-view.jpg">
-                    <img src="src/images/CAROUSEL-IMAGE/promoters-web-view.jpg" alt="Image 3">
+                    <img src="src/images/CAROUSEL-IMAGE/Crousel Image 1.png" alt="Image 3">
                 </picture>
             </div>
         </div>
@@ -71,7 +122,32 @@
         </div>
     </div>
         <!-- CAROUSEL-IMAGE END -->
+<script>
+    let header = document.getElementById("header")
+    let nav = document.getElementById("nav");
+    let ham = document.getElementById("hamburger");
+    let cross = document.getElementById("cross");
 
+    ham.addEventListener("click",()=>{
+        ham.style.display = "none"
+        cross.style.display = "block"
+        header.style.backgroundColor = "black"
+        if(nav.classList != "show"){
+            nav.classList.add("show")
+        }
+
+    })
+
+    cross.addEventListener("click",()=>{
+        ham.style.display = "block"
+        cross.style.display = "none"
+        header.style.backgroundColor = "rgb(255, 255, 255)"
+        if(nav.classList == "show"){
+            nav.classList.remove("show")
+        }
+    })
+
+</script>
         <script src="src/js/script.js"></script>
 </body>
 </html>
