@@ -32,4 +32,3 @@ function updateIndicators() {
 
 // Automatically move to the next slide every 2 seconds
 setInterval(() => move(1), intervalTime);
-
