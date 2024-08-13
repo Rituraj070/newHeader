@@ -1,6 +1,6 @@
 let currentIndex = 0;
 let totalItems = document.querySelectorAll('.carousel-item').length;
-const intervalTime = 5000; // Time in milliseconds
+// const intervalTime = 5000; // Time in milliseconds
 
 // Function to move the carousel
 function move(direction) {
