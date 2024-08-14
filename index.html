@@ -30,7 +30,7 @@
                 <ul>
                     <li><a id="active" href="#">Home</a></li>
                     <li>
-                        <a href="#">Committees
+                        <a href="#">Committees and Agendas
                             <i class='fas fa-angle-down'></i>
                         </a>
                         <ul  id="committee">
@@ -43,28 +43,37 @@
                             <li><a href="#">International Press</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Background Guides</a></li>
                     <li>
-                        <a href="#">Partners
+                        <a href="#">Our Organisation
                             <i class='fas fa-angle-down'></i>
                         </a>
-                        <ul id="partner">
-                            <li><a href="#">Partner Universities</a></li>
-                            <li><a href="#">Participating Institution</a></li>
+                        <ul id="Our_Organisation">
+                            <li><a href="#">Secretariat</a></li>
+                            <li><a href="#">Memories</a></li>
+                            <li><a href="#">Mrn</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Registration Details</a></li>
+                    <li><a href="#">Collabrations and Sponsors </a></li>
+                    <li><a href="#">Events</a></li>
                     <li>
                         <a href="#">About Us
                             <i class='fas fa-angle-down'></i>
                         </a>
                         <ul id="about">
-                            <li><a href="#">Introduction To AUSMUN INDIA</a></li>
-                            <li><a href="#">Theme of AUSMUN India 24</a></li>
+                            <li><a href="#">Introduction to The Indian Summit</a></li>
+                            <li><a href="#">Theme of The Indian Summit 24</a></li>
                             <li><a href="#">Meet the Secretariat</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li >
+                        <button id="Register_button">Register Now</button>
+                        <ul id="Register_Now">
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        
+                    </li>     
+                    
                 </ul>
             </nav>
             <div id="hamburger">&#9776;</div>
@@ -133,6 +142,7 @@
                 cross.style.display = "block"
                 header.style.backgroundColor = "black"
                 if(nav.classList != "show"){
+                    nav.style.zIndex = "9999"
                     nav.classList.add("show")
                 }
         
@@ -141,7 +151,7 @@
             cross.addEventListener("click",()=>{
                 ham.style.display = "block"
                 cross.style.display = "none"
-                header.style.backgroundColor = "rgb(255, 255, 255)"
+                header.style.backgroundColor = "transparent"
                 if(nav.classList == "show"){
                     nav.classList.remove("show")
                 }
